@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop e Cardápio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <h1>Escolha algum número para o loop maluco. <br> (com moderação hehe)</h1>
+        <input type="number" id="valor" placeholder="Digite o valor que deseja">
+        <button onclick="gerarLoop()">Gerar Loop</button>
+
+        <div id="loop"></div>
+
+        <h1>Escolha um item do cardápio e digite o número dele</h1>
+        <input type="number" id="itemNumber" placeholder="Digite o número do item (1-4)">
+        <button onclick="Item(parseInt(document.getElementById('itemNumber').value))">Escolher Item</button> <!--parseInt: converte a string que eu escrevo em um número inteiro (só pra lembrar) -->
+        
+        <ul>
+            <li>1- Cini framboesa</li>
+            <li>2- Água de coco</li>
+            <li>3- Coca-Cola</li>
+            <li>4- Chamar o garçom</li>
+        </ul>
+
+        <div id="resposta"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
